@@ -16,19 +16,16 @@ mongoose.connect(process.env.MONGODB_URI, {
 });
 
 const marvelRoutes = require("./Routes/Marvel");
-// const userRoutes = require("./routes/user");
-// const searchRoutes = require("./routes/search");
+
 app.use(marvelRoutes);
-// app.use(userRoutes);
-// app.use(searchRoutes);
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome on Marvel API" });
+  res.json({ message: "Bem vindo" });
 });
 
 app.all("*", (req, res) => {
-  res.json({ message: "this page does not exist" });
+  res.json({ message: "Not found" });
 });
 app.listen(process.env.PORT, () => {
-  console.log("Server has started");
+  console.log("Let's go");
 });
