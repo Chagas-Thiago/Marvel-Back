@@ -19,6 +19,7 @@
     "env": "0.0.2",
     "express": "^4.17.1",
     "express-formidable": "^1.2.0",
+    "index.js": "0.0.3",
     "md5": "^2.2.1",
     "mongoose": "^5.9.14",
     "nodemon": "^2.0.4",
